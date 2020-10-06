@@ -64,5 +64,5 @@ Unity brain name: BananaBrain
   pip install -r requirements.txt
   ```
 ## Instructions
-Once you have all requirements satisfies, open `Navigation.ipynb` jupyter notebook and run the cells to train the agent.
+Once you have all requirements satisfies, open `Navigation.ipynb` (located in the `p1_navigation/` folder in the DRLND GitHub repository) jupyter notebook and run the cells to train the agent.
 
