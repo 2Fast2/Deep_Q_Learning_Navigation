@@ -22,3 +22,9 @@ The target model update will be done every 4 steps, each episode has 1000 steps 
 ## Results
 The execution of the agent within this environment was resolved in a surprisingly 380 episodes as you can see in the image below, but this is a hardly repeteable result because it depens on the initial conditions and the randomly choosen actions.
 ![Result image](agent_result.png)
+
+## Ideas for future work
+* Extensive hyperparameter optimization
+* Double Deep Q Networks
+* Prioritized Experience Replay
+* Dueling Deep Q Networks
