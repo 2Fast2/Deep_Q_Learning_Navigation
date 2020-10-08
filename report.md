@@ -11,5 +11,14 @@ The neural network architecture consists in an two fully connected hidden layers
 * Fully connected layer - input: 64 output: 4 (action size)
 
 ## Training details
+The scores was a positive reward of 1 if the agent takes a yellow banana, if the agent takes a blue banana it obtains a reward of -1.
 
+The algorithm has a batche size of 64. The behaviour policy during training was epsilon-greedy from 1 to 0.1 with a decay of 0.995 over each episode with a minimum of 0.1 and a discount rate of 0.99.
 
+In the training we use Adam like optimizer algorithm, a learning rate of 0.001 and a Mean Sequare Error (MSE) to regularize losses.
+
+The target model update will be done every 4 steps, each episode has 1000 steps with a maximum of 2000 episodes.
+
+## Results
+The execution of the agent within this environment was resolved in a surprisingly 380 episodes as you can see in the image below, but this is a hardly repeteable result because it depens on the initial conditions and the randomly choosen actions.
+![Result image](agent_result.png)
